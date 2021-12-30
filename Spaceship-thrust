@@ -1,31 +1,34 @@
     /*1st challenge of Section 4 of The Complete C Programming Bootcamp course */
+
 #include <stdio.h>
 
-enum thrust{
-  OFF,
-  LOW = 5,
-  MEDIUM = 9,
-  HIGH = 12,
-  MAXIMUM = 20
-};
-int main() {
-    enum thrust stop = OFF;
-    enum thrust initial = LOW;
-    enum thrust med = MEDIUM;
-    enum thrust hi = HIGH;
-    enum thrust max = MAXIMUM;
+typedef enum
+{
+    THRUST_OFF = 0,
+    THRUST_LOW = 5,
+    THRUST_MEDIUM = 9,
+    THRUST_HIGH = 12,
+    THRUST_MAX = 20
+} SpaceshipThrust;
+int main(){
+    SpaceshipThrust thrust;
     
-    puts("*Spaceship thrust logger*");
-    puts("Logging thrust for ship outbound trajectory.");
-    puts("Thrust log:\n");
-    printf("-->: Set thrust ready to go: %d\n", stop);
+    puts("Spaceship thrust logger.");
+    sleep(2);
+    puts("Logging spaceship thrust.");
     sleep(1);
-    printf("-->: Set thrust for Take Off: %d\n", max);
+    thrust = THRUST_OFF;
+    printf("-->Set Thrust initial state: %d\n", thrust);
     sleep(2);
-    printf("-->: Set thrust for Ionosphere: %d\n", med);
-    sleep(3);
-    printf("-->: Set thrust for Deep Space: %d\n", initial);
+    thrust = THRUST_MAX;
+    printf("-->Set Thrust for Take-off: %d\n", thrust);
+    sleep(1);
+    thrust = THRUST_MEDIUM;
+    printf("-->Set Thrust for Ionosphere: %d\n", thrust);
     sleep(2);
-    printf("\n\n--Confirmation of successful Launch Squeuence--");
+    thrust = THRUST_LOW;
+    printf("-->Set thrust for Deep Space: %d\n", thrust);
+    sleep(1);
+    printf("**Confirmed successful launch**");
     return 0;
 }
