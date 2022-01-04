@@ -28,11 +28,16 @@
 
 int main(void){
     int moonLanding = 1969;
+    int speedOfLight = 299792458;
+    float pi = 3.142;
 
     puts("Bunch of Constants! Printing constants.");
     puts("Listing per challenge requirements. . .");
     printf("%10d | Moon Landing\n", moonLanding);
     printf("%010d | Moon Landing\n", moonLanding);
-
+    printf("%.0f | Speed of Light\n", (float)speedOfLight);
+    printf("%.3e | Speed of Light\n", (float)speedOfLight);
+    printf("%.2f | Pi\n", pi);
+    printf("%+.1e | Pi\n", pi);
     return 0;
 }
