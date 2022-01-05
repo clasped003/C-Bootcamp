@@ -30,6 +30,8 @@ int main(void){
     int moonLanding = 1969;
     int speedOfLight = 299792458;
     float pi = 3.142;
+    int hexaDead = 0XDEAD;
+    int hexaSecret = 51966;
 
     puts("Bunch of Constants! Printing constants.");
     puts("Listing per challenge requirements. . .");
@@ -39,5 +41,8 @@ int main(void){
     printf("%.3e | Speed of Light\n", (float)speedOfLight);
     printf("%.2f | Pi\n", pi);
     printf("%+.1e | Pi\n", pi);
+    printf("%X | HexaDead\n", hexaDead);
+    printf("%5d | HexaDead\n", hexaDead);
+    printf("%x | HexaDead\n", hexaDead);
     return 0;
 }
