@@ -43,8 +43,8 @@ int main(void){
     puts("Listing per challenge requirements. . .");
     printf("%10d | Moon Landing\n", moonLanding);
     printf("%010d | Moon Landing\n", moonLanding);
-    printf("%.0f | Speed of Light\n", (float)speedOfLight);
-    printf("%.3e | Speed of Light\n", (float)speedOfLight);
+    printf("%.0f | Speed of Light\n", speedOfLight);
+    printf("%.3e | Speed of Light\n", speedOfLight);
     printf("%.2f | Pi\n", pi);
     printf("%+.1e | Pi\n", pi);
     /*You can add 0x BEFORE the percent sign to print the full hex# if
