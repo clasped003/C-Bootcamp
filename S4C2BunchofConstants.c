@@ -1,7 +1,4 @@
-/*2nd challenge of Section 4 of The Complete C Programming Bootcamp course*/
-/*Bunch of Constants: 
- *
- * Define the following numeric constants:
+/*2nd challenge of Section 4 of The Complete C Programming Bootcamp course*/ /*Bunch of Constants: Define the following numeric constants:
  *  - moonLanding: 1969
  *  - speedOfLight: 299792458
  *  - pi: 3.142
@@ -27,11 +24,20 @@
 #include <stdio.h>
 
 int main(void){
-    int moonLanding = 1969;
-    int speedOfLight = 299792458;
-    float pi = 3.142;
-    int hexaDead = 0XDEAD;
-    int hexaSecret = 51966;
+    /*Declare all variables listed as constants*/
+    const int moonLanding = 1969;
+    /*This needs to print as a double. Though it 
+     * is initiated as an int, it will be converted during compilation. You
+     * can also add a decimal point at the end if you want, with no following
+     * digits.*/
+    const double speedOfLight = 299792458.;
+    /*Pi should also be initialized as a double.*/
+    const double pi = 3.142;
+    /*Define this as unsigned, and then type out like you did before, but
+     * add U at the end to show it as unsigned.*/
+    const unsigned int hexaDead = 0XDEADU;
+    /*Define this as unsigned and add U at the end*/
+    const unsigned int hexaSecret = 51966U;
 
     puts("Bunch of Constants! Printing constants.");
     puts("Listing per challenge requirements. . .");
@@ -41,8 +47,13 @@ int main(void){
     printf("%.3e | Speed of Light\n", (float)speedOfLight);
     printf("%.2f | Pi\n", pi);
     printf("%+.1e | Pi\n", pi);
-    printf("%X | HexaDead\n", hexaDead);
-    printf("%5d | HexaDead\n", hexaDead);
-    printf("%x | HexaDead\n", hexaDead);
+    /*You can add 0x BEFORE the percent sign to print the full hex# if
+     * needed.*/
+    printf("0x%X | HexaDead\n", hexaDead);
+    /*Can do an unsigned int listed through printf with a u character after %.
+     * This entry you need a 6 instead of a 5.*/
+    printf("%6u | HexaDead\n", hexaDead);
+    /*Only need %x for this one*/
+    printf("%x | HexaSecret\n", hexaSecret);
     return 0;
 }
