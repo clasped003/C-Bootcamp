@@ -1,4 +1,5 @@
-/*2nd challenge of Section 4 of The Complete C Programming Bootcamp course*/ /*Bunch of Constants: Define the following numeric constants:
+/*2nd challenge of Section 4 of The Complete C Programming Bootcamp course*/
+/*Bunch of Constants: Define the following numeric constants:
  *  - moonLanding: 1969
  *  - speedOfLight: 299792458
  *  - pi: 3.142
