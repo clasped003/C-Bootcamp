@@ -7,7 +7,7 @@
  *
  *  Steps:
  *
- *  -Prompt user to enter the radius.
+ *  XPrompt user to enter the radius.
  *  -Calculate the surface area
  *  -Calculate the enclosed volume
  *  -Print the radius and the results in decimal format(w/2 digit precision)
@@ -16,10 +16,12 @@
  *  */
 
 int main(void){
+    int radius;
     
     puts("Sphere Calculator!");
-    puts("Please enter the values for the volume and surface.");
-
+    printf("Please enter the radius of the sphere: ");
+    scanf("%d", &radius);
+    printf("Your radius is: %d", radius);
     
     return 0;
 }
