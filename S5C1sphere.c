@@ -33,7 +33,7 @@ int main(){
     printf("Your surface area in decimal is:%.2f\n", sArea);
     printf("Your surface area in SN is:%.3e\n", sArea);
     puts("Volume: ");
-    volume = 4 * pi * pow(4,3) / 3;
+    volume = 4.0 / 3 * pi * pow(radius,3);
     printf("Your volume in decimal is: %.2f\n", volume);
     printf("Your volume in SN is: %.3e\n", volume);
     return 0;
