@@ -10,11 +10,11 @@
  *  Steps:
  *
  *  XPrompt user to enter the radius.
- *  -Calculate the surface area
- *  -Calculate the enclosed volume
- *  -Print the radius and the results in decimal format(w/2 digit precision)
- *  -Print the radius & results in sci-notation(w/3 digit precision)
- *  -Check the results
+ *  XCalculate the surface area
+ *  XCalculate the enclosed volume
+ *  XPrint the radius and the results in decimal format(w/2 digit precision)
+ *  XPrint the radius & results in sci-notation(w/3 digit precision)
+ *  XCheck the results
  *  */
 
 int main(){
