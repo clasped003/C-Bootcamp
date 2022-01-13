@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+#define PI_NUM 3.14
 
 /* Sphere Challange:
  *
@@ -15,13 +17,23 @@
  *  -Check the results
  *  */
 
-int main(void){
+int main(){
     int radius;
-    
+    float pi = PI_NUM;
+    float sArea;
+    float volume;
+
     puts("Sphere Calculator!");
     printf("Please enter the radius of the sphere: ");
     scanf("%d", &radius);
-    printf("Your radius is: %d", radius);
-    
+    puts("Surface area: ");
+    printf("\nYour given radius in decimal is: %.2f\n", (float)radius);
+    printf("Your given radius in scientific notation is: %.3e\n", (float)radius);
+    sArea = 4 * pi * pow(radius,2);
+    printf("Your surface area in decimal is:%.2f\n", sArea);
+    printf("Your surface area in SN is:%.3e\n", sArea);
+    volume = 4 * pi * pow(4,3) / 3;
+    printf("Your Volume in decimal is: %.2f\n", volume);
+    printf("Your volume in SN is: %.3e\n", volume);
     return 0;
 }
