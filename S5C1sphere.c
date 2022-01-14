@@ -30,6 +30,7 @@ int main(){
     printf("\nYour given radius in decimal is: %.2f\n", (float)radius);
     printf("Your given radius in scientific notation is: %.3e\n", (float)radius);
     sArea = 4 * pi * pow(radius,2);
+    puts("Surface Area: ");
     printf("Your surface area in decimal is:%.2f\n", sArea);
     printf("Your surface area in SN is:%.3e\n", sArea);
     puts("Volume: ");
