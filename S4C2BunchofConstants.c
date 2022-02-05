@@ -49,7 +49,7 @@ int main(void){
     printf("%.2f | Pi\n", pi);
     printf("%+.1e | Pi\n", pi);
     /*You can add 0x BEFORE the percent sign to print the full hex# if
-     * needed.*/
+     * needed. You can also add '#' symbol after the % and before x.*/
     printf("0x%X | HexaDead\n", hexaDead);
     /*Can do an unsigned int listed through printf with a u character after %.
      * This entry you need a 6 instead of a 5.*/
